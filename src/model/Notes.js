@@ -13,7 +13,7 @@ const noteSchema = mongoose.Schema({
         required:[true,"User Id can't be blank"]
     },
     title:{
-        type:String,
+        type:int,
         require:[true,"Title is required"]
     },
     content:{
