@@ -15,6 +15,7 @@ router.post("/add",async function(req,res){
     const newNote =new Note({
         id: req.body.id,
         userid: req.body.userid,
+        totalamt :req.body.totalamt,
         title: req.body.title,
         content: req.body.content,
         })

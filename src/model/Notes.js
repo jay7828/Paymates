@@ -12,6 +12,10 @@ const noteSchema = mongoose.Schema({
         type:String,
         required:[true,"User Id can't be blank"]
     },
+    totalamt:{
+        type:Number,
+        require:[true,"Total Amount is Required"]
+    },
     title:{
         type:Number,
         require:[true,"Title is required"]
@@ -23,6 +27,7 @@ const noteSchema = mongoose.Schema({
         type:Date,
         default: Date.now(),
     }
+
 });
 
 module.exports = mongoose.model("Note",noteSchema);
