@@ -17,6 +17,7 @@ router.post("/add",async function(req,res){
         userid: req.body.userid,
         totalamt :req.body.totalamt,
         title: req.body.title,
+        dateadded:req.body.dateadded,
         content: req.body.content,
         })
 
