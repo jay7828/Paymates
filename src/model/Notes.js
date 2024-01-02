@@ -25,7 +25,6 @@ const noteSchema = mongoose.Schema({
     },
     dateadded:{
         type:Date,
-        default: Date.now(),
     }
 
 });
